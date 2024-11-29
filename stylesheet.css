@@ -3,12 +3,53 @@ body {
 }
 h1 {
   color: white;
+  font-size: 30px;
 }
 p {
   color: black;
-  font-family: Arial, sans-serif:
+  font-size: 24px;
+  padding: 15px;
 }
 
-.p1 {
-	font-family: "Times New Roman", Times, serif;
+a {
+	font-size: 20px;
+	padding: 20px;
 }
+
+a:link {
+	color: white;
+	
+}
+
+a:hover {
+	color: #D3B1C2;
+}
+
+a:visited {
+	color: #61359;
+}
+
+.sidenav {
+	height: 100%;
+	width: 100px;
+	position: fixed;
+	z-index:= 1;
+	top: 0;
+	left: 0;
+	padding-top: 20px;
+	background-color: #211522;
+	overflow: hidden;
+}
+
+.sidenav a{
+	padding: 6px 8px 6px 16px;
+	font-size: 20px;
+	display: block;
+}
+
+.main-content {
+	margin-left: 100px;
+	padding: 20px;
+	flex-grow: 1;
+}
+
