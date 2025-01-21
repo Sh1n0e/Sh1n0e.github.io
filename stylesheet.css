@@ -88,11 +88,11 @@ a:visited {
 }
 
 <!--- For Phones --->
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 450px) {
   .sidenav {
     width: 100%;
     height: auto;
-    position: fixed;
+    position: center;
     top: 0;
     left: 0;
     z-index: 1;
