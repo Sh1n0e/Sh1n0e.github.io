@@ -56,38 +56,58 @@ a:visited {
   margin-left: 200px;
   padding: 20px;
 }
-
-<!--- Laptop/pcs --->
-@media screen and (max-width: 1200px) {
+/* Ipads/Tablets */
+@media screen and (max-width: 768px) {
   .sidenav {
-    width: 150px;
+    width: 100%; 
+    height: auto; 
+    position: fixed;
+    top: 0; 
+    left: 0;
+    z-index: 1; 
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-around; 
+    background-color: #211522; 
   }
   .sidenav a {
-    font-size: 1.2rem;
+    text-align: center;
+    padding: 10px 5px;
+    font-size: 1rem;
+    flex: 1; 
+  }
+  .main-content {
+    margin-left: 0; 
+    margin-top: 50px; 
+    padding: 10px;
   }
 }
 
-<!--- Ipads/Tablets --->
-@media screen and (max-width: 768px) {
+/* Phones */
+@media screen and (max-width: 576px) {
   .sidenav {
-    width: 100%;
+    width: 100%; 
     height: auto;
-    position: relative;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around;
+    background-color: #211522;
   }
   .sidenav a {
-    float: left;
     text-align: center;
     padding: 10px 5px;
+    font-size: 0.9rem; 
+    flex: 1; 
   }
   .main-content {
     margin-left: 0;
+    margin-top: 50px; 
+    padding: 10px;
   }
 }
 
-<!--- Phones --->
-@media screen and (max-width: 576px) {
-  .sidenav a {
-    font-size: 1rem;
-    padding: 10px 5px;
-  }
 }
